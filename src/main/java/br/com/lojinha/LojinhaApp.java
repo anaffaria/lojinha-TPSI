@@ -1,7 +1,9 @@
 package br.com.lojinha;
 
+import br.com.lojinha.pojo.Product;
+
 public class LojinhaApp {
     public static void main(String[] args) {
-        System.out.println("Hello Word!");
+        Product product = new Product();
     }
 }
