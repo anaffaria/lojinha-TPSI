@@ -26,7 +26,11 @@ public class Product {
     }
 
     public void setValue(double value){
-        this.value = value;
+        if(value!=0){
+            this.value = value;
+        }else {
+            throw new IllegalArgumentException("Valores devem ser maiores que 0");
+        }
     }
     public String getSize(){
         return this.size;

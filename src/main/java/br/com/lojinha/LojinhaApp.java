@@ -5,5 +5,9 @@ import br.com.lojinha.pojo.Product;
 public class LojinhaApp {
     public static void main(String[] args) {
         Product product = new Product();
+
+        product.setValue(0);
+
+        System.out.println(product.getValue());
     }
 }
