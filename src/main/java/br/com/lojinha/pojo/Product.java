@@ -4,12 +4,21 @@ import br.com.lojinha.enums.Size;
 
 import java.util.List;
 
-public class Product {
+public class Product{
     private String name;
     private String mark;
     private double value;
     private Size size;
-    private List<String> included_items;
+
+    private List<IncludedItems> includedItems;
+
+    public Product(String initialMark, Size initialSize){
+        // Defining commands that will be started during instantiation
+        this.mark = initialMark;
+        this.size = initialSize;
+    }
+
+
 
     public String getName() {
         return this.name;
@@ -44,12 +53,15 @@ public class Product {
         this.size = size;
     }
 
-    public List<String> getIncluded_Items(){
-        return this.included_items;
+    public List<IncludedItems> getIncludedItems() {
+        return includedItems;
     }
 
-    public void  setIncluded_Items(List<String> included_items){
-        this.included_items = included_items;
+    public void setIncludedItems(List<IncludedItems> includedItems) {
+        this.includedItems = includedItems;
     }
+
+
+
 
 }
