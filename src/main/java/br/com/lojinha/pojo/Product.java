@@ -1,11 +1,15 @@
 package br.com.lojinha.pojo;
 
+import br.com.lojinha.enums.Size;
+
+import java.util.List;
+
 public class Product {
     private String name;
     private String mark;
     private double value;
-    private String size;
-    private String included_items;
+    private Size size;
+    private List<String> included_items;
 
     public String getName() {
         return this.name;
@@ -32,19 +36,19 @@ public class Product {
             throw new IllegalArgumentException("Valores devem ser maiores que 0");
         }
     }
-    public String getSize(){
+    public Size getSize(){
         return this.size;
     }
 
-    public void setSize(String size){
+    public void setSize(Size size){
         this.size = size;
     }
 
-    public String getIncluded_items(){
+    public List<String> getIncluded_Items(){
         return this.included_items;
     }
 
-    public void  setIncluded_items(String included_items){
+    public void  setIncluded_Items(List<String> included_items){
         this.included_items = included_items;
     }
 
