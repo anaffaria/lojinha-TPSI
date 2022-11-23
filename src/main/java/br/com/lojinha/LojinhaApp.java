@@ -2,6 +2,8 @@ package br.com.lojinha;
 
 import br.com.lojinha.enums.Size;
 import br.com.lojinha.pojo.IncludedItems;
+import br.com.lojinha.pojo.InternationalProduct;
+import br.com.lojinha.pojo.NationalProduct;
 import br.com.lojinha.pojo.Product;
 
 import java.util.ArrayList;
@@ -31,5 +33,16 @@ public class LojinhaApp {
             System.out.println(currentItems.getName());
             System.out.println(currentItems.getAmount());
         }
+
+        NationalProduct nationalProduct = new NationalProduct("Sony", Size.MEDIO);
+        nationalProduct.setNationalProduct(0.58);
+        System.out.println(nationalProduct.getNationalProduct());
+        System.out.println(nationalProduct.getFavoriteData());
+
+        InternationalProduct internationalProduct = new InternationalProduct("Sony", Size.PEQUENO);
+        internationalProduct.setImportingRate(0.89);
+        internationalProduct.setValue(-99);
+        System.out.println(internationalProduct.getImportingRate());
+        System.out.println(internationalProduct.getFavoriteData());
     }
 }

@@ -7,7 +7,7 @@ import java.util.List;
 public class Product{
     private String name;
     private String mark;
-    private double value;
+    protected double value;
     private Size size;
 
     private List<IncludedItems> includedItems;
@@ -17,7 +17,6 @@ public class Product{
         this.mark = initialMark;
         this.size = initialSize;
     }
-
 
 
     public String getName() {
